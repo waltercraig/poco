@@ -1,0 +1,21 @@
+// Figure
+/** 
+*** Contents
+*** 01 - figure
+*** 02 - caption
+**/
+
+// 01 - figure
+// Usage:
+figure {
+    display: block;
+}
+
+// 02 - caption
+// Usage:
+caption {
+    display: block;
+    padding: $caption-padding;
+    background-color: $caption-background-color;
+    font-size: $caption-font-size;
+}

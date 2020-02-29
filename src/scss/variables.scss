@@ -1,0 +1,16 @@
+// Grid
+$grid-columns: 12;
+$break-sml: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+$col-padding: 0.5rem;
+$container-max-width: 1200px;
+
+// Content
+$content-padding-xs: 3rem 0;
+$content-padding-md: 6rem 0;
+
+// Hero
+$hero-padding-xs: $content-padding-xs;
+$hero-padding-md: $content-padding-md;

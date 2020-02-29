@@ -1,0 +1,75 @@
+.container {
+  margin: 0 auto;
+  max-width: $container-max-width;
+}
+
+.container-full {
+  margin: 0;
+  max-width: 100%;
+}
+
+@mixin mq($from) {
+  @media (min-width: $from) {
+    @content;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  //Apply style to children not all descendants
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  &--padding {
+    margin-left: -$col-padding;
+    margin-right: -$col-padding;
+
+    //Apply padding to children & not all descendants
+    > * {
+      padding-left: $col-padding;
+      padding-right: $col-padding;
+    }
+  }
+}
+
+@for $i from 1 through $grid-columns {
+  .col-xs-#{$i} {
+    max-width: #{100% * $i / $grid-columns};
+  }
+}
+
+@for $i from 1 through $grid-columns {
+  .col-sm-#{$i} {
+    @include mq($break-sml) {
+      max-width: #{100% * $i / $grid-columns};
+    }
+  }
+}
+
+@for $i from 1 through $grid-columns {
+  .col-md-#{$i} {
+    @include mq($break-md) {
+      max-width: #{100% * $i / $grid-columns};
+    }
+  }
+}
+
+@for $i from 1 through $grid-columns {
+  .col-lg-#{$i} {
+    @include mq($break-lg) {
+      max-width: #{100% * $i / $grid-columns};
+    }
+  }
+}
+
+@for $i from 1 through $grid-columns {
+  .col-xl-#{$i} {
+    @include mq($break-xl) {
+      max-width: #{100% * $i / $grid-columns};
+    }
+  }
+}

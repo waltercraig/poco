@@ -1,0 +1,45 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "A nice website starter pack that makes use of webpack and babel with some basic boilerplate sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --output-public-path=/dist/ --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurDoom/webapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurDoom/webapp/issues"
+  },
+  "homepage": "https://github.com/ArthurDoom/webapp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.7.2",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "resolve-url-loader": "^3.1.0",
+    "sass-loader": "^8.0.0",
+    "serialize-javascript": ">=2.1.1",
+    "style-loader": "^1.0.0",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.2"
+  }
+}

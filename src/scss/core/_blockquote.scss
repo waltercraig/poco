@@ -1,0 +1,18 @@
+// Blockquote
+/** 
+*** Contents
+*** 01 - blockquote
+**/
+
+// 01 - blockquote
+// Usage: 
+
+blockquote {
+    display: block;
+    padding: $blockquote-padding;
+    border-style: solid;
+    border-width: $blockquote-border-width;
+    border-color: $blockquote-border-color;
+    border-left-width: $blockquote-border-left-width;
+    background-color: $blockquote-background-color;
+}

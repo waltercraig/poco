@@ -1,0 +1,15 @@
+@import "variables";
+@import "import";
+
+* {
+  box-sizing: border-box;
+}
+
+.content,
+.hero {
+  display: block;
+  padding: $hero-padding-xs;
+  @include mq(1200px) {
+    padding: $hero-padding-md;
+  }
+}

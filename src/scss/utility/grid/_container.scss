@@ -1,0 +1,18 @@
+/** 
+*** Contents
+*** 01 - container 
+*** 02 - container-full
+**/ 
+
+// 01 - container
+// Usage: https://gist.github.com/waltercraig/54b4fdd26ce426686ab16ea0efcdf4b6
+.container {
+    margin: 0 auto;
+    max-width: $container-max-width;
+}
+
+// 02 - container-full
+.container-full {
+    margin: 0;
+    max-width: 100%;
+}
