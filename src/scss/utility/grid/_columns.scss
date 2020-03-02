@@ -5,6 +5,13 @@
 
 // Default variables
 $grid-columns: 12 !default;
+$grid-columns: 12 !default;
+$break-sml: 576px !default;
+$break-md: 768px !default;
+$break-lg: 992px !default;
+$break-xl: 1200px !default;
+$col-padding: 0.5rem !default;
+$container-max-width: 1200px !default;
 
 // Grid
 // Usage: https://gist.github.com/waltercraig/54b4fdd26ce426686ab16ea0efcdf4b6
