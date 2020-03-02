@@ -3,6 +3,9 @@
 *** 01 - Grid 
 **/
 
+// Default variables
+$grid-columns: 12 !default;
+
 // Grid
 // Usage: https://gist.github.com/waltercraig/54b4fdd26ce426686ab16ea0efcdf4b6
 @for $i from 1 through $grid-columns {

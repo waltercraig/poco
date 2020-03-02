@@ -1,3 +1,16 @@
+// These vars are used as test overides for time being 
+
+// Colors
+$brand: #f2d357;
+$secondary: #1d2c38;
+$text-color: white;
+
+// Padding
+$global-padding: 1rem;
+
+// Margin
+$global-margin: 1rem;
+
 // Grid
 $grid-columns: 12;
 $break-sml: 576px;
@@ -16,11 +29,19 @@ $hero-padding-xs: $content-padding-xs;
 $hero-padding-md: $content-padding-md;
 
 // Anchor
-$anchor-color: green;
+$anchor-color: $brand;
 $anchor-decoration: underline;
-$anchor-color-hover: red;
+$anchor-color-hover: darken($brand, 10%);
 $anchor-decoration-hover: $anchor-decoration;
 
 // Anchor Underlined
 $anchor-underlined-color: $anchor-color;
 $anchor-underlined-color-hover: $anchor-color-hover;
+
+// Blockquote
+$blockquote-padding: $global-padding;
+$blockquote-border-width: 1px;
+$blockquote-border-color: $brand;
+$blockquote-border-left-width: 1rem;
+$blockquote-background-color: black;
+$blockquote-font-size: 3rem;
