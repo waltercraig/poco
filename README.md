@@ -11,7 +11,7 @@ Visit the roadmap [here](https://trello.com/b/Nog0k5z8/poco)
 npm install
 ```
 
-## Run local dev server
+### Run local dev server
 ```
 npm start
 ```
