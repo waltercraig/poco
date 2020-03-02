@@ -5,5 +5,8 @@
 @import "./utility/normalize/spacing";
 @import "./utility/normalize/form";
 
+// Core Styles
+@import "./core/anchor";
+
 // system-wide styles, mixins and placeholders
 @import "utility/grid";

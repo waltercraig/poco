@@ -14,3 +14,13 @@ $content-padding-md: 6rem 0;
 // Hero
 $hero-padding-xs: $content-padding-xs;
 $hero-padding-md: $content-padding-md;
+
+// Anchor
+$anchor-color: green;
+$anchor-decoration: underline;
+$anchor-color-hover: red;
+$anchor-decoration-hover: $anchor-decoration;
+
+// Anchor Underlined
+$anchor-underlined-color: $anchor-color;
+$anchor-underlined-color-hover: $anchor-color-hover;
