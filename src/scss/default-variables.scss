@@ -2,7 +2,8 @@
 
 // Colors
 $brand: #f2d357 !default;
-$secondary: #1d2c38 !default;
+$secondary: #0f181e !default;
+$bg-color: #1d2c38 !default;
 $text-color: white !default;
 
 // Padding
@@ -45,3 +46,22 @@ $blockquote-border-color: $brand !default;
 $blockquote-border-left-width: 1rem !default;
 $blockquote-background-color: black !default;
 $blockquote-font-size: 3rem !default;
+
+// Button
+$btn-padding: $global-padding !default;
+$btn-font-size: inherent !default;
+$btn-weight: 800 !default;
+$btn-border-width: 1px !default;
+$btn-border-style: solid !default;
+
+// Button Primary
+$btn-primary-background: $brand !default;
+$btn-primary-color: $secondary !default;
+$btn-primary-border-color: $brand !default;
+
+$btn-primary-background-hover: darken($btn-primary-background, 8%) !default;
+
+// Button Secondary
+$btn-secondary-background: $secondary !default;
+$btn-secondary-color: $brand !default;
+$btn-secondary-border-color: $secondary !default;
