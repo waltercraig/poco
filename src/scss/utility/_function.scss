@@ -1,0 +1,11 @@
+// Functions
+/** 
+*** Contents
+*** 01 - Calculate Rem
+**/
+
+// 01 - Calculate Rem
+@function calculateRem($size) {
+    $remSize: $size / $body-small; // This assumes you are calculating from mobile first
+    @return #{$remSize}rem;
+}

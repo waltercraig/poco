@@ -56,3 +56,10 @@
             + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
 }
+
+// 04 - convert font size from pixel to rem
+// Note: This assumes you are calculating from a mobile base of 14px if you prefer to convert from a desktop base of 16px change the "Calculate Rem" function in _functions
+// Usage: 
+@mixin fontSize($size) {
+    font-size: calculateRem($size);
+}
