@@ -12,12 +12,38 @@ $global-padding: 1rem !default;
 // Margin
 $global-margin: 1rem !default;
 
+// html
+$html-font-size-sm: 100%;
+
+// Typography
+$body-small: 14px;
+$body-desktop: 16px;
+$lh: 1.5;
+
+// Body
+$body-background-color: $brand !default;
+$body-color: $secondary !default;
+$font-stack: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+// Site Wrap
+$site-background-color: $secondary;
+$site-color: $text-color;
+
 // Grid
 $grid-columns: 12 !default;
 $break-sml: 576px !default;
 $break-md: 768px !default;
 $break-lg: 992px !default;
 $break-xl: 1200px !default;
+
+$breakpoints: (
+    'small': $break-sml,
+    'medium': $break-md,
+    'large': $break-lg,
+    'xl-large':  $break-xl
+) !default;
+
+
 $col-padding: 0.5rem !default;
 $container-max-width: 1200px !default;
 
@@ -60,6 +86,8 @@ $btn-primary-color: $secondary !default;
 $btn-primary-border-color: $brand !default;
 
 $btn-primary-background-hover: darken($btn-primary-background, 8%) !default;
+$btn-primary-color-hover: $btn-primary-color !default;
+$btn-primary-border-color-focus: darken($btn-primary-background, 20%) !default;
 
 // Button Secondary
 $btn-secondary-background: $secondary !default;

@@ -44,7 +44,7 @@
 
 @for $i from 1 through $grid-columns {
   .col-sm-#{$i} {
-    @include mq($break-sml) {
+    @include respond-to('small') {
       max-width: #{100% * $i / $grid-columns};
     }
   }
@@ -52,7 +52,7 @@
 
 @for $i from 1 through $grid-columns {
   .col-md-#{$i} {
-    @include mq($break-md) {
+    @include respond-to('medium') {
       max-width: #{100% * $i / $grid-columns};
     }
   }
@@ -60,7 +60,7 @@
 
 @for $i from 1 through $grid-columns {
   .col-lg-#{$i} {
-    @include mq($break-lg) {
+    @include respond-to('large') {
       max-width: #{100% * $i / $grid-columns};
     }
   }
@@ -68,7 +68,7 @@
 
 @for $i from 1 through $grid-columns {
   .col-xl-#{$i} {
-    @include mq($break-xl) {
+    @include respond-to('xl-large') {
       max-width: #{100% * $i / $grid-columns};
     }
   }

@@ -8,9 +8,16 @@
 @import "./utility/normalize/spacing";
 @import "./utility/normalize/form";
 
+@import "./utility/mixins";
+
 // Core Styles
+@import "./core/document";
 @import "./core/anchor";
 @import "./core/blockquote";
+@import "./core/typography";
 
 // system-wide styles, mixins and placeholders
 @import "utility/grid";
+
+// Theme Styles
+@import "./theme/theme";

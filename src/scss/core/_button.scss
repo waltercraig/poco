@@ -62,13 +62,13 @@
     &:visited,
     &:focus {
         background-color: $btn-primary-background-hover;
-        color: btn-primary-color-hover;
+        color: $btn-primary-color-hover;
         border-color: $btn-primary-border-color-focus;
     }
 
     &:hover {
         background-color: $btn-primary-background-hover;
-        color: btn-primary-color-hover;
+        color: $btn-primary-color-hover;
         border-color: $btn-primary-border-color-hover;
     }
 }
@@ -83,13 +83,13 @@
     &:visited,
     &:focus {
         background-color: $btn-background-hover;
-        color: btn-color-hover;
+        color: $btn-color-hover;
         border-color: $btn-primary-border-color-focus;
     }
 
     &:hover {
         background-color: $btn-background-hover;
-        color: btn-color-hover;
+        color: $btn-color-hover;
         border-color: $btn-primary-border-color-hover;
     }
 }

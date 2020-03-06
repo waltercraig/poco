@@ -1,0 +1,52 @@
+// Document
+/** 
+*** Contents
+*** 01 - html
+*** 02 - *
+*** 03 - body
+*** 04 - Site Wrap
+**/
+
+// 01 - html
+// Usage: 
+
+html {
+	font-size: 14px;
+	min-height: 100%;
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    @include respond-to(small) {
+        font-size: 16px;
+    }
+}
+
+// 02 - *
+// Usage:
+* {
+    &,
+	&::before,
+	&::after {
+		box-sizing: inherit; //https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+	}
+}
+
+// 03 - *
+// Usage:
+body {
+	background-color: $body-background-color;
+	color: $body-color;
+	font-family: $font-stack;
+    line-height: $lh;
+    font-size: $body-small;
+    @include respond-to('small') {
+        font-size: $body-desktop;
+    }
+}
+
+// 04 - Site Wrap
+// Usage:
+.site-wrap {
+    display: block;
+    background-color: $site-background-color;
+    color: $site-color;
+}
