@@ -9,10 +9,28 @@
 .container {
     margin: 0 auto;
     max-width: $container-max-width;
+    padding-left: $col-padding;
+    padding-right: $col-padding;
 }
 
 // 02 - container-full
 .container-full {
     margin: 0;
     max-width: 100%;
+}
+
+// 03 - container break md
+.container-break {
+    @include respond-to('small'){
+        max-width: $break-sml;
+    }
+    @include respond-to('medium'){
+        max-width: $break-md;
+    }
+    @include respond-to('large'){
+        max-width: $break-lg;
+    }
+    @include respond-to('xl-large'){
+        max-width: $break-xl;
+    }
 }

@@ -9,7 +9,7 @@
 .hero {
   display: block;
   padding: $hero-padding-xs;
-  @include mq(1200px) {
+  @include respond-to('large') {
     padding: $hero-padding-md;
   }
 }

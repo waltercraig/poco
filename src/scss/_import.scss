@@ -18,7 +18,9 @@
 @import "./core/typography";
 
 // system-wide styles, mixins and placeholders
-@import "utility/grid";
+@import "./utility/grid/container";
+@import "./utility/grid/row";
+@import "./utility/grid/columns";
 
 // Theme Styles
 @import "./theme/theme";
