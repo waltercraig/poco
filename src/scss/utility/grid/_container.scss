@@ -13,14 +13,15 @@
     padding-right: $col-padding;
 }
 
-// 02 - container-full
+// 02 - Container Full
 .container-full {
     margin: 0;
     max-width: 100%;
 }
 
-// 03 - container break md
-.container-break {
+// 03 - Container Strict
+// Usage:
+.container-strict {
     @include respond-to('small'){
         max-width: $break-sml;
     }

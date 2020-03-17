@@ -1,4 +1,6 @@
-
+body {
+	-webkit-font-smoothing: subpixel-antialiased; //https://usabilitypost.com/2010/08/26/font-smoothing/
+}
 
 $typography-elems:
 	'p',
