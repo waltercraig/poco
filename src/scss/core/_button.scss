@@ -4,6 +4,7 @@
 *** 01 - btn
 *** 01.1 - btn-block 
 *** 02 - primary
+*** 02.1 - btn-primary-ghost
 *** 03 - secondary
 *** 04 - 
 **/
@@ -26,27 +27,27 @@
 
         &-xs {
             display: block;
-            @include mq($break-sml) {
+            @include respond-to('small') {
                 display: inline-block;
             }
         }
         &-sm {
-            @include mq($break-sml) {
+            @include respond-to('small') {
                 display: block;
             }
         }
         &-md {
-            @include mq($break-md) {
+            @include respond-to('small') {
                 display: block;
             }
         }
         &-lg {
-            @include mq($break-lg) {
+            @include respond-to('small') {
                 display: block;
             }
         }
         &-xl {
-            @include mq($break-xl) {
+            @include respond-to('small') {
                 display: block;
             }
         }
@@ -59,37 +60,54 @@
     color: $btn-primary-color;
     border-color: $btn-primary-border-color;
 
+    &-ghost {
+        color: $btn-primary-color;
+        border-color: $btn-primary-border-color;
+    }
+
+    //TODO Check if this is less lines of code
+    &-ghost:visited,
+    &-ghost:focus,
+    &:visited,
+    &:focus {
+        color: $btn-primary-color-hover;
+        border-color: $btn-primary-border-color-focus;
+    }
+    
+    &-ghost:hover,
+    &:hover {
+        color: $btn-primary-color-hover;
+        border-color: $btn-primary-border-color-hover;
+    }
+
     &:visited,
     &:focus {
         background-color: $btn-primary-background-hover;
-        color: $btn-primary-color-hover;
-        border-color: $btn-primary-border-color-focus;
     }
 
     &:hover {
         background-color: $btn-primary-background-hover;
-        color: $btn-primary-color-hover;
-        border-color: $btn-primary-border-color-hover;
     }
+
 }
 
 // 03 - btn-secondary 
 // Usage: 
 
 .btn-secondary {
-    color: btn-secondary-color;
+    color: $btn-secondary-color;
     background-color: $btn-secondary-background-color;
 
     &:visited,
     &:focus {
-        background-color: $btn-background-hover;
-        color: $btn-color-hover;
+        background-color: $btn-secondary-background-color-hover;
+        color: $btn-secondary-color-hover;
         border-color: $btn-primary-border-color-focus;
     }
 
     &:hover {
-        background-color: $btn-background-hover;
-        color: $btn-color-hover;
+        background-color: $btn-secondary-background-color-hover;
+        color: $btn-secondary-color-hover;
         border-color: $btn-primary-border-color-hover;
     }
 }

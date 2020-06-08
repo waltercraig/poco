@@ -88,8 +88,14 @@ $btn-primary-border-color: $brand !default;
 $btn-primary-background-hover: darken($btn-primary-background, 8%) !default;
 $btn-primary-color-hover: $btn-primary-color !default;
 $btn-primary-border-color-focus: darken($btn-primary-background, 20%) !default;
+$btn-primary-border-color-hover: darken($btn-primary-border-color, 20%) !default;
 
+
+//TODO: Fix the naming on these background colors 0_0 is it color or just background brugh
 // Button Secondary
-$btn-secondary-background: $secondary !default;
+$btn-secondary-background-color: $secondary !default;
 $btn-secondary-color: $brand !default;
 $btn-secondary-border-color: $secondary !default;
+
+$btn-secondary-color-hover: $btn-secondary-color !default;
+$btn-secondary-background-color-hover: darken($btn-secondary-background-color, 8%) !default;
