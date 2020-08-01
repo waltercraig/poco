@@ -40,10 +40,13 @@
     "svg-inline-loader": "^0.8.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "websocket-extensions": ">=0.1.4",
+    "elliptic": ">=6.5.3",
+    "lodash": ">=4.17.19"
+
   },
   "dependencies": {
-    "@babel/runtime": "^7.9.2",
-    "elliptic": ">=6.5.3"
+    "@babel/runtime": "^7.9.2"
   }
 }
