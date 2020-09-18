@@ -43,8 +43,9 @@
     "webpack-dev-server": "^3.10.3",
     "websocket-extensions": ">=0.1.4",
     "elliptic": ">=6.5.3",
-    "lodash": ">=4.17.19"
-
+    "lodash": ">=4.17.19",
+    "node-forge": ">=0.10.0",
+    "yargs-parser": ">=13.1.2"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2"
