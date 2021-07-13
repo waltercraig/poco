@@ -1,18 +1,19 @@
-[![Artboard-1.png](https://i.postimg.cc/c1vPqNv7/Artboard-1.png)](https://github.com/waltercraig/poco)
+[poco-2-0-1.jpg](https://postimg.cc/142ys7d9)(https://github.com/waltercraig/poco)
 
 # Poco
-A lightweight Web App Boilerplate (that wants to be a framework)
-Visit the roadmap [here](https://trello.com/b/Nog0k5z8/poco)
 
-## Install 
+A lightweight foundation I use for quickly spinning up frontend projects.
+
+## Install
 
 ### Install packages
+
 ```
 npm install
 ```
 
-### Run local dev server
+### build and production (change mode in webpack.config )
+
 ```
 npm start
 ```
-

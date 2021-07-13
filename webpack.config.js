@@ -2,62 +2,59 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
-  output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
-    publicPath: path.resolve(__dirname, "dist")
-  },
-  mode: "production", //'none' | 'development' | 'production'
-  /*
-  uncomment if all files are in core directory
-  devServer: {
-    contentBase: "./dist"
-  },
-  */
-  plugins: [
-    new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // all options are optional
-      filename: "[name].css",
-      chunkFilename: "[id].css",
-      ignoreOrder: false // Enable to remove warnings about conflicting order
-    })
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-            plugins: ["@babel/plugin-transform-runtime"]
-          }
-        }
-      },
-      {
-        test: /\.(sa|sc|c)ss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: "../penuts",
-              hmr: process.env.NODE_ENV === "production"
-            }
-          },
-          {
-            loader: "css-loader",
-            options: { url: false } //Stop webpack
-          },
-          "sass-loader"
-        ]
-      },
-      {
-        test: /\.svg$/,
-        loader: "svg-inline-loader"
-      }
-    ]
-  }
+	mode: "development", //'none' | 'development' | 'production'
+	context: path.resolve(__dirname, "assets"),
+	output: {
+		filename: "main.bundle.js",
+		path: path.resolve(__dirname, "assets/dist/js"),
+		sourceMapFilename: "[file].map",
+	},
+	devtool: "source-map",
+	watch: true,
+	plugins: [
+		new MiniCssExtractPlugin({
+			// Options similar to the same options in webpackOptions.output
+			// both options are optional
+			filename: "../css/[name].min.css",
+			chunkFilename: "[id].css",
+		}),
+	],
+	module: {
+		rules: [
+			{
+				test: /\.m?js$/,
+				exclude: /(node_modules|bower_components)/,
+				use: {
+					loader: "babel-loader",
+					options: {
+						presets: ["@babel/preset-env"],
+					},
+				},
+			},
+
+			{
+				test: /\.s[ac]ss$/i,
+				// Runs from bottom to top. Breaks my head
+				use: [
+					MiniCssExtractPlugin.loader,
+					"css-loader",
+					"resolve-url-loader",
+					"sass-loader",
+				],
+			},
+			{
+				test: /\.(png|svg|jp(e*)g|gif)$/,
+				exclude: /node_modules/,
+				use: [
+					{
+						loader: "file-loader",
+						options: {
+							name: "[name].[ext]",
+							outputPath: "../images",
+						},
+					},
+				],
+			},
+		],
+	},
 };
